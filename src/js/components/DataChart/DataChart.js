@@ -118,6 +118,7 @@ const DataChart = ({
             key={i}
             values={values[key]}
             bounds={bounds}
+            // bounds={[[0, data.length - 1], [0, 100]]}
             overflow
             thickness={thickness}
             {...chartRest}

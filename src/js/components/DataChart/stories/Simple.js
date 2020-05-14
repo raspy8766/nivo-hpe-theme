@@ -3,7 +3,7 @@ import { storiesOf } from '@storybook/react';
 
 import { Box, DataChart, Grommet } from 'grommet';
 import { grommet } from 'grommet/themes';
-import { data } from './data';
+import { data } from '../data';
 
 const SimpleDataChart = () => (
   <Grommet theme={grommet}>
