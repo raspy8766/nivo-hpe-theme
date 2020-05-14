@@ -39,6 +39,56 @@ const getLabelMaxWidth = (data, keys) => {
   return Math.max(...labelWidths);
 };
 
+// {
+//   axis: {
+//       textColor: '#000',
+//       fontSize: '11px',
+//       tickColor: '#000',
+//       legendColor: '#000',
+//       legendFontSize: '11px',
+//   },
+//   grid: {
+//       stroke: '#ddd',
+//       strokeWidth: 1,
+//       strokeDasharray: '',
+//   },
+//   markers: {
+//       lineColor: '#000',
+//       lineStrokeWidth: 1,
+//       textColor: '#000',
+//       fontSize: '11px',
+//   },
+//   dots: {
+//       textColor: '#000',
+//       fontSize: '11px',
+//   },
+//   tooltip: {
+//       container: {
+//           background: 'white',
+//           color: 'inherit',
+//           fontSize: 'inherit',
+//           borderRadius: '2px',
+//           boxShadow: '0 1px 2px rgba(0, 0, 0, 0.25)',
+//           padding: '5px 9px',
+//       },
+//       basic: {
+//           whiteSpace: 'pre',
+//           display: 'flex',
+//           alignItems: 'center',
+//       },
+//       table: {},
+//       tableCell: {
+//           padding: '3px 5px',
+//       },
+//   },
+//   labels: {
+//       textColor: '#000',
+//   },
+//   sankey: {
+//       label: {},
+//   },
+// }
+
 
 // todo pulls theme automatically from context
 export const HpeThemeBarChart = ({
@@ -57,7 +107,7 @@ export const HpeThemeBarChart = ({
   else if (color) colorName = color;
   else if (theme.chart && theme.chart.color) colorName = theme.chart.color;
 
-  const normalizedColor = normalizeColor(colorName, theme);;
+  const normalizedColor = normalizeColor(colorName, theme);
   const opacity =
     color && color.opacity ? theme.global.opacity[color.opacity] : undefined;
 
@@ -66,7 +116,15 @@ export const HpeThemeBarChart = ({
     left: getLabelMaxWidth(data, keys, marginObject) + marginObject.left,
   }), [data, keys, marginObject]);
 
-  // todo use HPE theme from context (use hooks)
+  const { 
+    global: { colors: { dark: textColor } },
+    text: { xsmall: { size: fontSize } },
+  } = theme;
+
+  // TODO: add support for... 
+  //  * dynamic rotation of tic values when labels get to close together or overlap
+  //  * Add support for not showing all labels (e.g. indexed by date)
+  //    * Example options: { tickFrequency: 'all' | 'least' | 'most' }
   return (
     <ResponsiveBar
       data={
@@ -77,6 +135,19 @@ export const HpeThemeBarChart = ({
       padding={propMap.barPadding[barPadding] || barPadding}
       colors={normalizedColor}
       margin={margin}
+      axisLeft={{
+        // format: v => `$${v}`,
+      }}
+      axisBottom={{
+        // tickRotation: '-30',
+        // format: v => `$${v}`,
+      }}
+      theme={{
+        axis: {
+            textColor,
+            fontSize,
+        },
+      }}
       defs={[
         linearGradientDef('opacity', [
             { offset: 0, color: 'inherit', opacity },

@@ -15,9 +15,7 @@ const dateFormatter = (date) => (
 );
 
 const customFormFieldTheme = {
-  global: {
-    
-  },
+  global: {},
 };
 
 const HpeThemeChart = () => (
