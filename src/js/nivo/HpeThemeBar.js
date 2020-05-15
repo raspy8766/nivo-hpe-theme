@@ -1,16 +1,12 @@
-import { ResponsiveBar, linearGradientDef } from 'nivo';
+import { ResponsiveBar } from '@nivo/bar'
+import { linearGradientDef } from '@nivo/core'
+
 import React, { useMemo, useContext } from 'react';
 import { ThemeContext } from 'styled-components';
 import textSize from 'svg-text-size';
+import { Box, Text } from 'grommet';
 import { normalizeColor } from '../utils';
-
-
-const dateFormatter = (date) => (
-  new Date(date).toLocaleDateString('en-US', {
-    month: 'short',
-    day: 'numeric',
-  })
-);
+import { getColorName, getChartTheme } from './utils';
 
 const propMap = {
   barPadding: {
@@ -30,7 +26,7 @@ const propMap = {
   },
 }
 
-const getLabelMaxWidth = (data, keys) => {
+const getLeftTickMaxWidth = (data, keys) => {
   const labelWidths = data.flatMap((item) => keys.flatMap((key) => {
     const value = item[key];
     const normalizedValue = typeof value === 'number' ? Math.round(value) : value;
@@ -39,122 +35,100 @@ const getLabelMaxWidth = (data, keys) => {
   return Math.max(...labelWidths);
 };
 
-// {
-//   axis: {
-//       textColor: '#000',
-//       fontSize: '11px',
-//       tickColor: '#000',
-//       legendColor: '#000',
-//       legendFontSize: '11px',
-//   },
-//   grid: {
-//       stroke: '#ddd',
-//       strokeWidth: 1,
-//       strokeDasharray: '',
-//   },
-//   markers: {
-//       lineColor: '#000',
-//       lineStrokeWidth: 1,
-//       textColor: '#000',
-//       fontSize: '11px',
-//   },
-//   dots: {
-//       textColor: '#000',
-//       fontSize: '11px',
-//   },
-//   tooltip: {
-//       container: {
-//           background: 'white',
-//           color: 'inherit',
-//           fontSize: 'inherit',
-//           borderRadius: '2px',
-//           boxShadow: '0 1px 2px rgba(0, 0, 0, 0.25)',
-//           padding: '5px 9px',
-//       },
-//       basic: {
-//           whiteSpace: 'pre',
-//           display: 'flex',
-//           alignItems: 'center',
-//       },
-//       table: {},
-//       tableCell: {
-//           padding: '3px 5px',
-//       },
-//   },
-//   labels: {
-//       textColor: '#000',
-//   },
-//   sankey: {
-//       label: {},
-//   },
-// }
+const getColor = (color, theme) => {
+  const primary = normalizeColor(getColorName(color, theme), theme);
+  // TODO: get this from the theme as well (graph-1)
+  const secondary = '#FFD63E';
+  return [primary, secondary];
+};
 
-
-// todo pulls theme automatically from context
 export const HpeThemeBarChart = ({
   data,
   barPadding = 'small',
   margin: marginProp = 'medium',
   keys,
   indexBy,
+  groupMode = 'stacked',
+  formatters = {
+    left: value => value,
+    right: value => value,
+    bottom: value => value,
+    top: value => value,
+  },
   color,
 }) => {
   const theme = useContext(ThemeContext);
   const marginObject = propMap.margin[marginProp] || propMap.margin.medium
 
-  let colorName;
-  if (color && color.color) colorName = color.color;
-  else if (color) colorName = color;
-  else if (theme.chart && theme.chart.color) colorName = theme.chart.color;
-
-  const normalizedColor = normalizeColor(colorName, theme);
-  const opacity =
-    color && color.opacity ? theme.global.opacity[color.opacity] : undefined;
+  const opacity = color && color.opacity && theme.global.opacity[color.opacity];
 
   const margin = useMemo(() => ({
     ...marginObject,
-    left: getLabelMaxWidth(data, keys, marginObject) + marginObject.left,
+    left: getLeftTickMaxWidth(data, keys, marginObject) + marginObject.left,
   }), [data, keys, marginObject]);
 
+  const keyMaxWidth = useMemo(() => (
+    Math.max(...keys.map(key => textSize(key).width))
+  ), [keys]);
+
   const { 
-    global: { colors: { dark: textColor } },
-    text: { xsmall: { size: fontSize } },
-  } = theme;
+    textColor,
+    fontFamily,
+    fontSize,
+  } = getChartTheme(theme);
 
   // TODO: add support for... 
   //  * dynamic rotation of tic values when labels get to close together or overlap
-  //  * Add support for not showing all labels (e.g. indexed by date)
+  //  * Add support for not showing all labels (e.g. determine tickValues property)
   //    * Example options: { tickFrequency: 'all' | 'least' | 'most' }
+
   return (
-    <ResponsiveBar
-      data={
-        data.map(item => ({ ...item, date: dateFormatter(item.date) }))
-      }
-      keys={keys}
-      indexBy={indexBy}
-      padding={propMap.barPadding[barPadding] || barPadding}
-      colors={normalizedColor}
-      margin={margin}
-      axisLeft={{
-        // format: v => `$${v}`,
-      }}
-      axisBottom={{
-        // tickRotation: '-30',
-        // format: v => `$${v}`,
-      }}
-      theme={{
-        axis: {
-            textColor,
-            fontSize,
-        },
-      }}
-      defs={[
-        linearGradientDef('opacity', [
+    <Box style={{ width: 500, height: 300 }}>
+      <ResponsiveBar
+        data={data}
+        keys={keys}
+        indexBy={indexBy}
+        padding={propMap.barPadding[barPadding] || barPadding}
+        colors={getColor(color, theme)}
+        margin={margin}
+        groupMode={groupMode}
+        axisLeft={{
+          format: formatters.left,
+          // TODO: dynamically change this value based on chart height (parent container)
+          tickValues: 5,
+        }}
+        axisBottom={{
+          // tickRotation: '-30',
+          format: formatters.bottom,
+        }}
+        theme={{
+          fontFamily,
+          fontSize,
+          textColor,
+        }}
+        tooltip={({id, value, color: tooltipColor}) => (
+          <Box direction='row'>
+            <Box background={tooltipColor} style={{ height: '20px', width: '20px' }} />
+            <Text margin={{ left: 'xsmall' }}>{id}</Text>
+            <Text margin={{ left: 'xsmall' }}>{formatters.left(value)}</Text>
+          </Box>
+        )}
+        legends={[{
+          anchor: 'top-right',
+          direction: 'row',
+          translateY: -30,
+          itemWidth: keyMaxWidth + 10,
+          itemHeight: 10,
+          symbolSize: 11,
+        }]}
+        defs={[
+          linearGradientDef('opacity', [
             { offset: 0, color: 'inherit', opacity },
-        ]),
-      ]}
-      fill={[{ match: '*', id: 'opacity' }]}
-      enableLabel={false}
-    />
+          ]),
+        ]}
+        fill={[{ match: '*', id: 'opacity' }]}
+        enableLabel={false}
+      />
+    </Box>
   )
 };

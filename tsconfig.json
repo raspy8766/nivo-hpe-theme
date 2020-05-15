@@ -22,5 +22,5 @@
     "typeRoots": ["./node_modules/@types/", "./src/@types/"]
   },
   "exclude": ["node_modules"],
-  "include": ["src/**/*"]
+  "include": ["src/**/*", "src/js/nivo/stories/.js"]
 }

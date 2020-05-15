@@ -1,36 +1,38 @@
 import { storiesOf } from '@storybook/react';
-import { Box, Grommet } from 'grommet';
+import { Grommet } from 'grommet';
 import { grommet } from 'grommet/themes';
-import React from 'react';
 import { deepMerge } from 'grommet/utils';
+import React from 'react';
 import { data } from '../../components/DataChart/data';
 import { HpeThemeBarChart } from '../HpeThemeBar';
+import { formatters } from '../utils';
 
-
-const dateFormatter = (date) => (
-  new Date(date).toLocaleDateString('en-US', {
-    month: 'short',
-    day: 'numeric',
-  })
-);
-
-const customFormFieldTheme = {
-  global: {},
+const customTheme = {
+  global: {
+    colors: {
+      'accent-1': '#00E8CF',
+      'accent-2': '#7630EA',
+      'graph-0': 'accent-1',
+      'graph-1': 'accent-2',
+    },
+  },
 };
 
+// TODO: move container to HpeThemeBarChart
 const HpeThemeChart = () => (
-  <Grommet theme={deepMerge(grommet, customFormFieldTheme)}>
-    <Box style={{ width: 500, height: 300, border: '1px solid red' }}>
-      <HpeThemeBarChart
-        data={
-          data.map(item => ({ ...item, date: dateFormatter(item.date) }))
-        }
-        margin='medium'
-        keys={['percent']}
-        indexBy='date'
-        barPadding='small'
-      />
-    </Box>
+  <Grommet theme={deepMerge(grommet, customTheme)}>
+    <HpeThemeBarChart
+      data={data}
+      margin='medium'
+      keys={['percent']}
+      indexBy='date'
+      locale='en-US'
+      formatters={{
+        left: formatters.number(),
+        bottom: formatters.date({ size: 'month-day' }),
+      }}
+      barPadding='small'
+    />
   </Grommet>
 );
 
