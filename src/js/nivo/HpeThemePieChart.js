@@ -2,14 +2,13 @@ import { ResponsivePie } from '@nivo/pie';
 import { Box, Text } from 'grommet';
 import React, { useContext } from 'react';
 import { ThemeContext } from 'styled-components';
-import { getChartColors, getChartTheme, propMap } from './utils';
+import { getChartTheme, getThemeColor, propMap, getChartColorScheme } from './utils';
 
-
-const legend = (data, colors, formatter) => (
-  data.map(({ label, value }, index) => (
+const legend = (data, formatter, colorFormat) => (
+  data.map(({ label, value, status }, index) => (
     <Box
       key={label}
-      justify='between'
+      justify='between' 
       margin={{ horizontal: 'small' }}
       style={{ width: 300 }}
       direction='row'
@@ -17,7 +16,7 @@ const legend = (data, colors, formatter) => (
       <Box direction='row' align='center'>
         <Box
           round
-          background={colors[index]}
+          background={status ? colorFormat({ status }) : colorFormat[index]}
           style={{ width: 10, height: 10 }}
         />
         <Text size='xsmall' margin={{ left: 'xsmall' }}>
@@ -25,7 +24,7 @@ const legend = (data, colors, formatter) => (
         </Text>
       </Box>
       <Text size='xsmall'>
-        {formatter(value)}
+        {formatter ? formatter(value) : value}
       </Text>
     </Box>
   ),
@@ -35,9 +34,24 @@ export const HpeThemePieChart = ({
   data,
   margin = 'medium',
   formatter,
+  chartType = 'pie',
+  legendType = 'label-value',
 }) => {
   const theme = useContext(ThemeContext);
-  const chartColors = getChartColors(theme);
+
+  const colorFormat = data[0].status ?
+  ({ status }) => getThemeColor(theme, status) :
+  getChartColorScheme(theme);
+
+  const legends = legendType === 'label' ? [{
+      anchor: 'bottom',
+      direction: 'row',
+      translateY: 30,
+      itemWidth: 100,
+      itemHeight: 18,
+      symbolSize: 10,
+      symbolShape: 'circle',
+    }] : [];
 
   // todo get parent container dimentions dynamically (e.g. https://www.npmjs.com/package/react-use-dimensions)
   return (
@@ -48,14 +62,16 @@ export const HpeThemePieChart = ({
           margin={propMap.margin[margin]}
           sortByValue
           theme={getChartTheme(theme)}
-          colors={chartColors}
+          colors={colorFormat}
           startAngle={-180}
+          innerRadius={chartType === 'donut' ? 0.75 : null}
           enableRadialLabels={false}
           enableSlicesLabels={false}
           isInteractive={false}
+          legends={legends}
         />
       </Box>
-      {legend(data, chartColors, formatter)}
+      {legendType === 'label-value' && legend(data, formatter, colorFormat)}
     </Box>
     )
   }

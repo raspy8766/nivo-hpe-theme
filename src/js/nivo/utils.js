@@ -53,10 +53,12 @@ export const getColorName = (color, theme) => {
   return theme.chart && theme.chart.color;
 }
 
-export const getChartColors = (theme) => (
+export const getThemeColor = (theme, status) => normalizeColor(getColorName(status, theme), theme);
+
+export const getChartColorScheme = (theme) => (
   Object.entries(theme.global.colors)
     .filter(([colorKey]) => colorKey.includes('graph-'))
-    .map(([, color]) => normalizeColor(getColorName(color, theme), theme))
+    .map(([, color]) => getThemeColor(theme, color))
 );
 
 export const getChartTheme = ({

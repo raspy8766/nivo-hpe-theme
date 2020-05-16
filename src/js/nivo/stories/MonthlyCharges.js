@@ -55,7 +55,7 @@ const MonthlyCharges = () => (
       locale='en-US'
       formatters={{
         left: formatters.currency(),
-        bottom: formatters.date({size: 'month'}),
+        bottom: formatters.date({ size: 'month' }),
       }}
       barPadding='small'
     />
