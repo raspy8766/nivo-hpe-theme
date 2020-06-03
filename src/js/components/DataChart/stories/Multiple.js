@@ -1,14 +1,17 @@
 import React from 'react';
 import { storiesOf } from '@storybook/react';
-import styled from 'styled-components';
 
 import { Box, DataChart, Grommet, Text } from 'grommet';
 import { grommet } from 'grommet/themes';
-import { data } from '../data';
 
-const NoWrapText = styled.span`
-  white-space: nowrap
-`
+const data = [];
+for (let i = 0; i < 13; i += 1) {
+  const v = -Math.sin(i / 2.0);
+  data.push({
+    date: `2020-07-${((i % 30) + 1).toString().padStart(2, 0)}`,
+    amount: Math.floor(v * 100),
+  });
+}
 
 const MultipleDataChart = () => (
   <Grommet theme={grommet}>
@@ -16,35 +19,30 @@ const MultipleDataChart = () => (
       <DataChart
         data={data}
         chart={[
-          // {
-          //   key: 'percent',
-          //   type: 'area',
-          //   color: { color: 'graph-0', opacity: 'medium' },
-          // },
-          { key: 'percent', type: 'line', round: true },
-          { key: 'percent', type: 'bar', thickness: 'hair' },
-          { key: 'percent', type: 'point', round: true, thickness: 'small' },
+          {
+            key: 'amount',
+            type: 'area',
+            thickness: 'xsmall',
+            color: { color: 'graph-0', opacity: 'medium' },
+          },
+          { key: 'amount', type: 'line', thickness: 'xsmall', round: true },
+          { key: 'amount', type: 'bar', thickness: 'hair' },
+          { key: 'amount', type: 'point', round: true, thickness: 'medium' },
         ]}
         xAxis={{
-          guide: true,
-          background: 'brand',
-          // key: 'name',
+          labels: 2,
           render: i => (
             <Box pad="xsmall" align="start">
-            {/* <Box pad="xsmall" align="start" style={{ transform: 'rotate(45deg)' }}> */}
               <Text>
                 {new Date(data[i].date).toLocaleDateString('en-US', {
                   month: 'short',
                   day: 'numeric',
                 })}
               </Text>
-              {/* <NoWrapText>{data[i].name}</NoWrapText> */}
             </Box>
           ),
         }}
-        yAxis={{ guide: true }}
-        steps={[data.length - 1, 6]}
-        thickness="xsmall"
+        yAxis={{ guide: true, labels: 3 }}
         gap="medium"
         pad="small"
       />

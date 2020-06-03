@@ -27,7 +27,7 @@ exports[`Layer animation fadeIn 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -41,7 +41,7 @@ exports[`Layer animation fadeIn 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -124,7 +124,7 @@ exports[`Layer animation fadeIn 1`] = `
 `;
 
 exports[`Layer animation fadeIn 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -143,24 +143,21 @@ exports[`Layer animation fadeIn 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -207,7 +204,7 @@ exports[`Layer animation false 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -221,7 +218,7 @@ exports[`Layer animation false 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -302,7 +299,7 @@ exports[`Layer animation false 1`] = `
 `;
 
 exports[`Layer animation false 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -321,24 +318,21 @@ exports[`Layer animation false 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -385,7 +379,7 @@ exports[`Layer animation slide 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -399,7 +393,7 @@ exports[`Layer animation slide 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -482,7 +476,7 @@ exports[`Layer animation slide 1`] = `
 `;
 
 exports[`Layer animation slide 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -501,24 +495,21 @@ exports[`Layer animation slide 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -565,7 +556,7 @@ exports[`Layer animation true 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -579,7 +570,7 @@ exports[`Layer animation true 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -662,7 +653,7 @@ exports[`Layer animation true 1`] = `
 `;
 
 exports[`Layer animation true 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -681,24 +672,21 @@ exports[`Layer animation true 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -745,7 +733,7 @@ exports[`Layer custom margin 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -759,7 +747,7 @@ exports[`Layer custom margin 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -842,7 +830,7 @@ exports[`Layer custom margin 1`] = `
 `;
 
 exports[`Layer custom margin 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -861,24 +849,21 @@ exports[`Layer custom margin 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -915,7 +900,7 @@ exports[`Layer dark context 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -974,23 +959,21 @@ exports[`Layer dark context 1`] = `
 `;
 
 exports[`Layer dark context 2`] = `
-"@media only screen and (max-width:768px) {
-  .jbCjtc {
+"@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -1020,7 +1003,7 @@ exports[`Layer focus on layer 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -1113,7 +1096,7 @@ exports[`Layer full false 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -1127,7 +1110,7 @@ exports[`Layer full false 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -1210,7 +1193,7 @@ exports[`Layer full false 1`] = `
 `;
 
 exports[`Layer full false 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -1229,24 +1212,21 @@ exports[`Layer full false 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -1293,7 +1273,7 @@ exports[`Layer full horizontal 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -1307,7 +1287,7 @@ exports[`Layer full horizontal 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -1391,7 +1371,7 @@ exports[`Layer full horizontal 1`] = `
 `;
 
 exports[`Layer full horizontal 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -1410,24 +1390,21 @@ exports[`Layer full horizontal 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -1474,7 +1451,7 @@ exports[`Layer full true 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -1488,7 +1465,7 @@ exports[`Layer full true 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -1570,7 +1547,7 @@ exports[`Layer full true 1`] = `
 `;
 
 exports[`Layer full true 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -1589,24 +1566,21 @@ exports[`Layer full true 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -1653,7 +1627,7 @@ exports[`Layer full vertical 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -1667,7 +1641,7 @@ exports[`Layer full vertical 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -1751,7 +1725,7 @@ exports[`Layer full vertical 1`] = `
 `;
 
 exports[`Layer full vertical 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -1770,24 +1744,21 @@ exports[`Layer full vertical 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -1833,7 +1804,7 @@ exports[`Layer hidden 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -1847,7 +1818,7 @@ exports[`Layer hidden 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -1914,23 +1885,21 @@ exports[`Layer hidden 1`] = `
 `;
 
 exports[`Layer hidden 2`] = `
-"@media only screen and (max-width:768px) {
-  .jbCjtc {
+"@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -1952,15 +1921,15 @@ exports[`Layer hidden 2`] = `
 
 exports[`Layer hidden 3`] = `
 <div
-  class="StyledLayer-rmtehz-0 jbCjtc"
+  class="StyledLayer-rmtehz-0 XIVyE"
   id="hidden-test"
   tabindex="-1"
 >
   <div
-    class="StyledLayer__StyledOverlay-rmtehz-1 bnUvKb"
+    class="StyledLayer__StyledOverlay-rmtehz-1 TgNMj"
   />
   <div
-    class="StyledLayer__StyledContainer-rmtehz-2 cUgmNe"
+    class="StyledLayer__StyledContainer-rmtehz-2 hyqqbS"
     id="hidden-test"
   >
     <a
@@ -1974,7 +1943,7 @@ exports[`Layer hidden 3`] = `
 `;
 
 exports[`Layer hidden 4`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -1993,24 +1962,21 @@ exports[`Layer hidden 4`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -2114,7 +2080,7 @@ exports[`Layer margin large 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -2128,7 +2094,7 @@ exports[`Layer margin large 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -2211,7 +2177,7 @@ exports[`Layer margin large 1`] = `
 `;
 
 exports[`Layer margin large 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -2230,24 +2196,21 @@ exports[`Layer margin large 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -2294,7 +2257,7 @@ exports[`Layer margin medium 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -2308,7 +2271,7 @@ exports[`Layer margin medium 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -2391,7 +2354,7 @@ exports[`Layer margin medium 1`] = `
 `;
 
 exports[`Layer margin medium 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -2410,24 +2373,21 @@ exports[`Layer margin medium 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -2474,7 +2434,7 @@ exports[`Layer margin none 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -2488,7 +2448,7 @@ exports[`Layer margin none 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -2571,7 +2531,7 @@ exports[`Layer margin none 1`] = `
 `;
 
 exports[`Layer margin none 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -2590,24 +2550,21 @@ exports[`Layer margin none 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -2654,7 +2611,7 @@ exports[`Layer margin small 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -2668,7 +2625,7 @@ exports[`Layer margin small 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -2751,7 +2708,7 @@ exports[`Layer margin small 1`] = `
 `;
 
 exports[`Layer margin small 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -2770,24 +2727,21 @@ exports[`Layer margin small 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -2834,7 +2788,7 @@ exports[`Layer margin xsmall 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -2848,7 +2802,7 @@ exports[`Layer margin xsmall 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -2931,7 +2885,7 @@ exports[`Layer margin xsmall 1`] = `
 `;
 
 exports[`Layer margin xsmall 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -2950,24 +2904,21 @@ exports[`Layer margin xsmall 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -3004,7 +2955,7 @@ exports[`Layer non-modal 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -3063,23 +3014,21 @@ exports[`Layer non-modal 1`] = `
 `;
 
 exports[`Layer non-modal 2`] = `
-"@media only screen and (max-width:768px) {
-  .jbCjtc {
+"@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -3109,7 +3058,7 @@ exports[`Layer not steal focus from an autofocus focusable element 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -3302,7 +3251,7 @@ exports[`Layer plain 1`] = `
 `;
 
 exports[`Layer plain 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -3321,24 +3270,21 @@ exports[`Layer plain 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -3385,7 +3331,7 @@ exports[`Layer position bottom 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -3399,7 +3345,7 @@ exports[`Layer position bottom 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -3482,7 +3428,7 @@ exports[`Layer position bottom 1`] = `
 `;
 
 exports[`Layer position bottom 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -3501,24 +3447,21 @@ exports[`Layer position bottom 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -3565,7 +3508,7 @@ exports[`Layer position center 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -3579,7 +3522,7 @@ exports[`Layer position center 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -3662,7 +3605,7 @@ exports[`Layer position center 1`] = `
 `;
 
 exports[`Layer position center 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -3681,24 +3624,21 @@ exports[`Layer position center 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -3745,7 +3685,7 @@ exports[`Layer position end 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -3759,7 +3699,7 @@ exports[`Layer position end 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -3842,7 +3782,7 @@ exports[`Layer position end 1`] = `
 `;
 
 exports[`Layer position end 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -3861,24 +3801,21 @@ exports[`Layer position end 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -3925,7 +3862,7 @@ exports[`Layer position left 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -3939,7 +3876,7 @@ exports[`Layer position left 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -4022,7 +3959,7 @@ exports[`Layer position left 1`] = `
 `;
 
 exports[`Layer position left 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -4041,24 +3978,21 @@ exports[`Layer position left 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -4105,7 +4039,7 @@ exports[`Layer position right 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -4119,7 +4053,7 @@ exports[`Layer position right 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -4202,7 +4136,7 @@ exports[`Layer position right 1`] = `
 `;
 
 exports[`Layer position right 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -4221,24 +4155,21 @@ exports[`Layer position right 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -4285,7 +4216,7 @@ exports[`Layer position start 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -4299,7 +4230,7 @@ exports[`Layer position start 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -4382,7 +4313,7 @@ exports[`Layer position start 1`] = `
 `;
 
 exports[`Layer position start 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -4401,24 +4332,21 @@ exports[`Layer position start 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -4465,7 +4393,7 @@ exports[`Layer position top 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -4479,7 +4407,7 @@ exports[`Layer position top 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -4562,7 +4490,7 @@ exports[`Layer position top 1`] = `
 `;
 
 exports[`Layer position top 2`] = `
-".jbCjtc {
+".XIVyE {
   font-size: 18px;
   line-height: 24px;
   box-sizing: border-box;
@@ -4581,24 +4509,21 @@ exports[`Layer position top 2`] = `
   right: 0px;
   bottom: 0px;
 }
-
-@media only screen and (max-width:768px) {
-  .jbCjtc {
+@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .ckZaHQ {
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;
@@ -4645,7 +4570,7 @@ exports[`Layer target 1`] = `
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: rgba(0,0,0,0.5);
+  background-color: rgba(0,0,0,0.5);
   color: #f8f8f8;
   pointer-events: all;
 }
@@ -4659,7 +4584,7 @@ exports[`Layer target 1`] = `
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 48px;
-  background: #FFFFFF;
+  background-color: #FFFFFF;
   color: #444444;
   outline: none;
   pointer-events: all;
@@ -4746,23 +4671,135 @@ exports[`Layer target 1`] = `
 `;
 
 exports[`Layer target 2`] = `
-"@media only screen and (max-width:768px) {
-  .jbCjtc {
+"@media only screen and (max-width: 768px) {
+  .XIVyE {
     position: absolute;
     width: 100%;
     height: 100%;
     min-height: 100vh;
   }
 }
-
-@media only screen and (max-width:768px) {
-  .bnUvKb {
+@media only screen and (max-width: 768px) {
+  .TgNMj {
     position: relative;
   }
 }
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
+    position: relative;
+    max-height: none;
+    max-width: none;
+    border-radius: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    -webkit-animation: none;
+    animation: none;
+    height: 100vh;
+    width: 100vw;
+  }
+}"
+`;
+
+exports[`Layer target not modal 1`] = `
+.c0 {
+  font-size: 18px;
+  line-height: 24px;
+  box-sizing: border-box;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  min-height: 48px;
+  background-color: #FFFFFF;
+  color: #444444;
+  outline: none;
+  pointer-events: all;
+  z-index: 15;
+  position: fixed;
+  max-height: calc(100% - 0px - 768px);
+  max-width: calc(100% - 0px - 1024px);
+  border-radius: 4px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+  -webkit-animation: hWAzxx 0.2s ease-in-out forwards;
+  animation: hWAzxx 0.2s ease-in-out forwards;
+}
+
+.c1 {
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  position: absolute;
+}
 
 @media only screen and (max-width:768px) {
-  .ckZaHQ {
+
+}
+
+@media only screen and (max-width:768px) {
+  .c0 {
+    position: relative;
+    max-height: none;
+    max-width: none;
+    border-radius: 0;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    -webkit-transform: none;
+    -ms-transform: none;
+    transform: none;
+    -webkit-animation: none;
+    animation: none;
+    height: 100vh;
+    width: 100vw;
+  }
+}
+
+<div
+  class="c0"
+  id="target-test"
+>
+  <a
+    aria-hidden="true"
+    class="c1"
+    tabindex="-1"
+  />
+  this is a test layer
+</div>
+`;
+
+exports[`Layer target not modal 2`] = `
+"@media only screen and (max-width: 768px) {
+  .XIVyE {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .TgNMj {
+    position: relative;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .fYgBNY {
     position: relative;
     max-height: none;
     max-width: none;

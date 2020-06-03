@@ -1,16 +1,26 @@
 import * as React from "react";
 import { 
   A11yTitleType,
-  ColorType, 
-  GridAreaType, 
-  MarginType, 
+  GapType,
+  GridAreaType,
+  MarginType,
 } from "../../utils";
 import { ChartProps } from "../Chart";
 import { GridProps } from "../Grid";
 
 type ChartType = {
-  key: string;
-  ChartProps?;
+  key?: string;
+  keys?: { key: string, color?: ChartProps["color"] }[];
+  a11yTitle?: A11yTitleType;
+  bounds?: ChartProps["bounds"];
+  color?: ChartProps["color"];
+  dash?: ChartProps["dash"];
+  onClick?: ChartProps["onClick"];
+  onHover?: ChartProps["onHover"];
+  overflow?: ChartProps["overflow"];
+  round?: ChartProps["round"];
+  thickness?: ChartProps["thickness"];
+  type?: ChartProps["type"];
 }
 
 export interface DataChartProps {
@@ -21,10 +31,10 @@ export interface DataChartProps {
   gridArea?: GridAreaType,
   margin?: MarginType;
   pad?: GridProps["pad"];
-  steps?: number[][];
+  size?: ChartProps["size"];
   thickness?: ChartProps["thickness"];
-  xAxis?: boolean | { guide?: boolean, key?: string, render?: (index:number) => (any) };
-  yAxis?: boolean | { guide?: boolean };
+  xAxis?: boolean | { guide?: boolean, key?: string, labels?: number, render?: (dataIndex: number, axisIndex: number) => (void) };
+  yAxis?: boolean | { guide?: boolean, labels?: number, render?: (value: (number|string), axisIndex: number) => (void) };
 }
 
 declare const DataChart: React.FC<DataChartProps>;
